@@ -70,3 +70,4 @@ docker-compose.override.yml
 lerna-debug.log
 nx-cache/
 turbo/
+docs/
