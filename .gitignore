@@ -1,0 +1,72 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build output
+dist/
+build/
+out/
+coverage/
+.tmp/
+.temp/
+.cache/
+.next/
+.svelte-kit/
+.svelte/
+.vite/
+.eslintcache
+
+# Logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Test output
+test-results/
+junit.xml
+coverage-final.json
+
+# Misc
+*.local
+*.swp
+*.bak
+*.orig
+
+# Storybook
+storybook-static/
+
+# TypeScript
+*.tsbuildinfo
+
+# Firebase
+.firebase/
+
+# Docker
+docker-compose.override.yml
+
+# Monorepo tools
+lerna-debug.log
+nx-cache/
+turbo/
