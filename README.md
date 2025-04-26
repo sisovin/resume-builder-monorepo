@@ -109,6 +109,100 @@ resume-builder-monorepo/
 │   └── backend/
 │       ├── src/
 │       │   ├── auth/
+│       │   │   ├── auth.module.ts
+│       │   │   ├── auth.service.ts
+│       │   │   ├── auth.controller.ts
+│       │   │   ├── dto/
+│       │   │   │   ├── login.dto.ts
+│       │   │   │   └── register.dto.ts
+│       │   │   ├── interfaces/
+│       │   │   │   └── auth.interface.ts
+│       │   │   │   ├── strategies/  # Generic auth strategies
+│       │   │   │   │   └── jwt.strategy.ts
+│       │   │   │   └── guards/
+│       │   │   │       └── jwt-auth.guard.ts
+│       │   │   └── ... (other common utilities)
+│       │   ├── resume/
+│       │   │   ├── resume.module.ts
+│       │   │   ├── resume.service.ts
+│       │   │   ├── resume.controller.ts
+│       │   │   ├── dto/
+│       │   │   │   ├── create-resume.dto.ts
+│       │   │   │   └── update-resume.dto.ts
+│       │   │   ├── interfaces/
+│       │   │   │   └── resume.interface.ts
+│       │   │   └── entities/
+│       │   │       └── resume.entity.ts
+│       │   ├── user/
+│       │   │   ├── user.module.ts
+│       │   │   ├── user.service.ts
+│       │   │   ├── user.controller.ts
+│       │   │   ├── dto/
+│       │   │   │   └── user.dto.ts
+│       │   │   └── entities/
+│       │   │       └── user.entity.ts
+│       │   ├── common/
+│       │   │   ├── filters/
+│       │   │   │   └── http-exception.filter.ts
+│       │   │   ├── interceptors/
+│       │   │   │   └── transform.interceptor.ts
+│       │   │   └── decorators/
+│       │   │       └── api-response.decorator.ts
+│       │   ├── config/
+│       │   │   ├── database.config.ts
+│       │   │   └── jwt.config.ts
+│       │   ├── prisma/
+│       │   │   └── prisma.service.ts
+│       │   ├── main.ts
+│       │   └── app.module.ts
+│       ├── prisma/
+│       │   ├── migrations/
+│       │   └── schema.prisma
+│       ├── test/
+│       │   ├── auth.e2e-spec.ts
+│       │   └── resume.e2e-spec.ts
+│       ├── .gitignore
+│       ├── .env.example
+│       └── README.md
+│       ├── tsconfig.build.json
+│       ├── tsconfig.json
+│       ├── package.json
+│       └── nest-cli.json
+├── libs/
+│   └── shared/
+│       ├── src/
+│       │   ├── interfaces/
+│       │   │   ├── resume.interface.ts
+│       │   │   └── user.interface.ts
+│       │   └── dtos/
+│       │   │   ├── auth/
+│       │   │   │   ├── login.dto.ts
+│       │   │   │   └── register.dto.ts
+│       │   │   └── resume/
+│       │   │       ├── create-resume.dto.ts
+│       │   │       └── update-resume.dto.ts
+│       │   └── ... (other shared code)
+│       ├── __tests__/  # Added tests for shared lib
+│       │   └── dto-validation.spec.ts
+│       └── README.md
+│       └── tsconfig.json
+│       ├── scripts
+│       │        └── sync-dtos.ts
+├── docs/
+│   ├── architecture.md
+│   ├── setup.md
+│   ├── contributing.md
+│   └── dto-sync.md  # Added documentation for DTO sync strategy
+└── packages/
+│   └── tailwind-config/
+│       ├── index.js
+│       ├── tailwind.config.js
+│       ├── README.md
+│       └── package.json
+└── prisma-client/
+      ├── index.ts
+      ├── generated/
+      └── package.json
 ...
 ```
 
