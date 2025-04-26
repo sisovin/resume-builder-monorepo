@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@backend/*": ["backend/*"],
+      "@shared/*": ["shared/*"]
+    }
+  },
+  "include": ["backend", "shared"]
+}
